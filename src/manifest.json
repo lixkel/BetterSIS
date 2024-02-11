@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "BetterSIS",
+    "version": "0.1",
+    "description": "Change background color to black on IS.CUNI.CZ/Studium",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://is.cuni.cz/studium/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
