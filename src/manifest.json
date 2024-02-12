@@ -12,10 +12,14 @@
     ],
     "browser_action": {
       "default_popup": "popup.html",
-      "default_icon": "icon.png"
+      "default_icon": "icons/bsis.png"
     },
     "icons": {
-      "48": "icon.png"
-    }
+      "128": "icons/bsis.png"
+    },
+    "web_accessible_resources": [
+      "icons/calendar.png"
+  ]
+  
   }
   
