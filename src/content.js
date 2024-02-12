@@ -117,3 +117,11 @@ var elementToRemove = document.querySelector('.menu1 > td:nth-child(4)');
 if (elementToRemove) {
     elementToRemove.parentNode.removeChild(elementToRemove);
 }
+
+// ICONS:
+var imgElements = document.querySelectorAll('img[src="img/term_st2.gif"]');
+
+// Iterate over each element and update its src attribute
+imgElements.forEach(function(img) {
+    img.src = browser.runtime.getURL('icons/calendar.png');
+});
